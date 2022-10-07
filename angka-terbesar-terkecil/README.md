@@ -1,4 +1,3 @@
 #SkillTestBatch14 Refactory 
 
-Menghitung faktorial
-https://refactory-brown.vercel.app/
+https://refactory-angka-terbesar-terkecil.vercel.app/
