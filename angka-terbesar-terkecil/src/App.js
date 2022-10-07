@@ -18,7 +18,7 @@ function App() {
 
     var min = Math.min(...formFields.map((item) => item.angka));
     var max = Math.max(...formFields.map((item) => item.angka));
-    console.log("MIN : " + min);
+    console.log("MIN : " + (min + 1));
     console.log("MAX : " + max);
 
     setAngkaTerkecil(min);
