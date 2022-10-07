@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [formFields, setFormFields] = useState([{ name: "" }]);
+  const [formFields, setFormFields] = useState([{ angka: "" }]);
   const [angkaTerkecil, setAngkaTerkecil] = useState("");
   const [angkaTerbesar, setAngkaTerbesar] = useState("");
 
@@ -16,8 +16,8 @@ function App() {
     e.preventDefault();
     console.log(formFields);
 
-    var min = Math.min(...formFields.map((item) => item.name));
-    var max = Math.max(...formFields.map((item) => item.name));
+    var min = Math.min(...formFields.map((item) => item.angka));
+    var max = Math.max(...formFields.map((item) => item.angka));
     console.log("MIN : " + min);
     console.log("MAX : " + max);
 
@@ -27,7 +27,7 @@ function App() {
 
   const addFields = () => {
     let object = {
-      name: "",
+      angka: "",
     };
 
     setFormFields([...formFields, object]);
@@ -57,11 +57,11 @@ function App() {
                         <span className="label-text">Masukan angka</span>
                       </label>
                       <input
-                        name="name"
+                        name="angka"
                         type="number"
                         placeholder="Masukan angka...."
                         className="input input-bordered w-full max-w-xs"
-                        value={form.name}
+                        value={form.angka}
                         onChange={(event) => handleFormChange(event, index)}
                       />
                     </div>
@@ -109,7 +109,7 @@ function App() {
                 value={
                   "Kumpulan angka : " +
                   formFields.map((form) => {
-                    return form.name;
+                    return form.angka;
                   })
                 }
               ></textarea>
