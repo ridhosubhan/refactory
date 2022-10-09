@@ -119,10 +119,10 @@ function App() {
                 placeholder="hasil"
                 value={
                   "Terbesar : " +
-                  angkaTerkecil +
+                  angkaTerbesar +
                   "\n" +
                   "Terkecil : " +
-                  angkaTerbesar
+                  angkaTerkecil
                 }
               ></textarea>
             </div>
